@@ -13,3 +13,26 @@
             border: 2px solid $main-color
             color: $main-color
 
+@media (max-width: 1199px)
+    .tabHeader
+        &__item
+            padding: 10px 20px
+
+@media (max-width: 991px)
+.tabHeader
+    &_scroll
+        overflow-x: scroll
+        &::-webkit-scrollbar
+            display: none
+    &__items
+        min-width: 130%
+
+@media (max-width: 991px)
+    .tabHeader
+        &__items
+            min-width: 150%
+
+@media (max-width: 575px)
+    .tabHeader
+        &__items
+            min-width: 310%

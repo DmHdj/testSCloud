@@ -1,4 +1,25 @@
 .blockWIthForm
-    min-height: 266px
     &__form 
         margin-top: 50px
+
+@media (max-width: 1400px)
+    .blockWIthForm
+        &_bigMargin
+            margin-top: 125px
+
+@media (max-width: 1199px)
+    .blockWIthForm
+        &_bigMargin
+            margin-top: 90px
+
+@media (max-width: 911px)
+    .blockWIthForm
+        &__form 
+            margin-top: 30px
+        &_bigMargin
+            margin-top: 70px
+
+@media (max-width: 575px)
+    .blockWIthForm
+        &_bigMargin
+            margin-top: 60px

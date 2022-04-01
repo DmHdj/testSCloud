@@ -1,5 +1,6 @@
+'use strict';
+
 window.addEventListener('DOMContentLoaded', () => {
-    'use strict';
     // Tabs
 
     const tabs = document.querySelectorAll('.tabHeader__item'),

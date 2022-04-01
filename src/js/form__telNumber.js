@@ -1,7 +1,8 @@
-window.addEventListener('DOMContentLoaded', () => {
-    'use strict';
+'use strict';
 
-    // Получаем данные
+window.addEventListener('DOMContentLoaded', () => {
+
+    // Получаем элементы
     const selectCountry = document.querySelectorAll('.form__select'),
           inputNum = document.querySelectorAll('.form__input_num');
 

@@ -1,16 +1,113 @@
 .other
-    margin-top: 122px
     &__wrapper
         display: flex
-        justify-content: space-between
         margin-top: 80px
     &__item
-        width: 343px
+        &:nth-child(1)
+            width: 328px
+            margin-right: 81px
+        &:nth-child(2)
+            width: 333px
+            margin-right: 73px
+        &:nth-child(3)
+            width: 343px
     &__productName
         display: flex
+        height: 46px
         margin-bottom: 23px
     &__icon
         margin-right: 44px
     &__descr
         margin-bottom: 15px
         height: 120px
+
+@media (max-width: 1400px)
+    .other
+        margin-top: 100px
+        &__wrapper
+            margin-top: 59px
+        &__item
+            &:nth-child(1)
+                width: 287px
+                margin-right: 51px
+            &:nth-child(2)
+                width: 304px
+                margin-right: 34px
+            &:nth-child(3)
+                width: 308px
+        &__productName
+            align-items: center
+        &__icon
+            margin-right: 40px
+            &_accounting
+                width: 43px
+                height: 40px
+            &_reporting
+                width: 44px
+                height: 33px
+            &_inf
+                width: 42px
+                height: 39px
+        &__descr
+            height: 144px
+
+@media (max-width: 1199px)
+    .other
+        &__wrapper
+            justify-content: space-between
+            margin-top: 45px
+        &__item
+            &:nth-child(1)
+                width: auto
+                margin-right: 30px
+            &:nth-child(2)
+                width: auto
+                margin-right: 30px
+            &:nth-child(3)
+                width: auto
+
+@media (max-width: 991px)
+    .other
+        &__wrapper
+            margin-top: 30px
+        &__item
+            &:nth-child(1)
+                width: 287px
+                margin-right: 0px
+            &:nth-child(2)
+                width: 304px
+                margin-right: 0
+            &:nth-child(3)
+                display: none
+        &__productName
+            margin-bottom: 20px
+        
+@media (max-width: 767px)
+    .other
+        &__item
+            &:nth-child(1)
+                width: 40%
+            &:nth-child(2)
+                width: 55%
+        &__descr
+            height: 185px
+
+@media (max-width: 575px)
+    .other
+        margin-top: 60px
+        &__wrapper
+            flex-direction: column
+            margin-top: 24px
+        &__item
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(2)
+                width: 100%
+                margin-top: 40px
+        &__productName
+            margin-bottom: 16px
+        &__descr
+            height: auto
+            margin-bottom: 11px
+
+

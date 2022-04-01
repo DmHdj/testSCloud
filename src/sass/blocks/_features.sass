@@ -1,5 +1,4 @@
 .features
-    min-height: 294px
     &__listContainer
         display: flex
         justify-content: space-between
@@ -9,3 +8,27 @@
         list-style-type: none
         padding: 0
         margin: 0
+
+@media (max-width: 991px)
+    .features
+        margin-top: 47px
+        &__listContainer
+            display: flex
+            flex-direction: column
+            margin-top: 38px
+        &__list
+            width: 100%
+            &:last-child
+                margin-top: 24px
+        
+@media (max-width: 575px)
+    .features
+        margin-top: 60px
+        &__listContainer
+            margin-top: 20px
+        &__list
+            &:last-child
+                margin-top: 20px
+
+
+

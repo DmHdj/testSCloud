@@ -16,7 +16,7 @@
     &__promo
         width: 288px
         height: 48px
-        margin-top: 40px
+        margin-top: 25px
     &__form
         width: 320px
         height: 48px
@@ -27,3 +27,53 @@
         display: flex
         justify-content: center
         align-items: center
+
+
+@media (max-width: 1400px)
+    .button
+        &__header
+            width: 150px
+        &__social
+            width: 48px
+            height: 48px
+
+@media (max-width: 1199px)
+    .button
+        &__header
+            width: 140px
+            height: 40px
+        &__promo
+            height: 48px
+            margin-top: 25px
+
+@media (max-width: 991px)
+    .button
+        &__header
+            width: 150px
+        &__promo
+            height: 40px
+            margin-top: 36px
+        &__form
+            width: 288px
+            height: 40px
+        &__social
+            width: 52px
+            height: 52px
+            
+@media (max-width: 767px)
+    .button
+        &__header
+            width: auto
+            height: auto
+            padding: 0
+            background: none
+            color: $main-color
+
+@media (max-width: 575px)
+    .button
+        &__promo
+            height: 48px
+            margin-top: 44px
+        &__social
+            width: 45px
+            height: 45px

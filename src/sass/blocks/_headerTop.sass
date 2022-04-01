@@ -2,7 +2,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.15)
 
 .headerTop
-    min-height: 84px
     &__wrapper
         display: flex
         align-items: center
@@ -36,6 +35,8 @@
         width: 17px
         height: 17px
         margin-right: 38px
+    &__searchInput
+        display: none
     &__icon
         width: 100%
         height: 100%
@@ -57,6 +58,10 @@
         &:hover
             text-decoration: none
             color: #6F6F6F
+    &__btns
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__logIn
         width: 60px
         height: 18px
@@ -71,3 +76,148 @@
         &:hover
             text-decoration: none
             color: #6F6F6F
+
+
+@media (max-width: 1400px)
+    .headerTop
+        &__wrapper
+            position: relative
+        &__logo
+            margin-right: 30px
+        &__menuItem
+            margin-right: 20px
+        &__menuItem:last-child
+            margin-right: 30px
+        &__search
+            margin: auto 0
+            width: 14px
+            margin-right: 30px
+        &__phone
+            margin-right: 30px
+        &__icon
+            &_before
+                margin-right: 9px
+            &_none
+                display: none
+            &_menu
+                width: 8px
+                height: 4px
+                vertical-align: middle
+                margin-left: 9px
+        &__logIn
+            width: 35px
+
+@media (max-width: 1199px)
+    .header
+        margin-bottom: 60px
+        
+    .headerTop
+        &__logo
+            width: 70px
+            height: 49px
+            margin-right: 20px
+        &__phone
+            font-size: 13px
+            margin-right: 20px
+        &__menuLink
+            font-size: 13px
+        &__search
+            margin-right: 20px
+
+@media (max-width: 991px)
+    .headerTop
+        &__wrapper 
+            padding: 16px 0 15px 0
+        &__menuList
+            position: fixed
+            flex-direction: column
+            align-items: start
+            top: -110%
+            left: 0
+            width: 100%
+            height: 100%
+            padding-left: 50px
+            background-color: #f4f4f4
+            transition: 0.6s all
+            z-index: 1000
+            overflow: hidden
+            &_active
+                top: 71px
+                padding-top: 90px
+        &__menuItem
+            margin-bottom: 40px
+        &__menuLink
+            font-size: 20px
+        &__icon
+            display: block
+            &_menu
+                display: inline-block
+                transform: rotate(-90deg)
+                width: 10px
+                height: 10px
+            &_search
+                position: absolute
+                right: 12%
+                width: 17px
+        &__search
+            display: flex
+            justify-content: center
+            width: 100%
+            position: fixed
+            top: -110%
+            left: 0 
+            transition: 0.6s all
+            z-index: 1000
+            padding-top: 30px
+            &_active
+                top: 71px
+        &__searchInput
+            display: block
+            width: 80%
+            height: 30px
+            padding: 5px
+            border: 2px solid #eaeaea
+            border-radius: 20px
+        &__logo
+            width: 62px
+            height: 40px
+            margin-right: 40px
+        &__phone
+            font-size: 15px
+            margin-right: 127px
+        &__logIn
+            width: 60px
+        
+@media (max-width: 767px)
+    .headerTop
+        &__phone
+            margin-right: 30px
+
+@media (max-width: 575px)
+    .header 
+        border-bottom: none
+        margin-bottom: 0
+    .headerTop
+        &__wrapper 
+            padding: 13px 0 24px 0
+            align-items: start
+        &__logo
+            width: 70px
+            height: 45px
+            margin-right: 24px
+        &__icon
+            &_before
+                display: none
+        &__btns
+            position: absolute
+            top: 42px
+            left: 94px
+        &__logIn
+            width: 35px
+            margin-right: 13px
+
+
+
+        
+
+        

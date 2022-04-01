@@ -16,14 +16,14 @@
     &__cell
         text-align: center
         height: 24px
-        padding-bottom: 24px
+        padding-bottom: 20px
         padding-top: 20px
         &_head
-            padding-bottom: 45px
+            padding-bottom: 15px
             padding-top: 0
         &_wide
             text-align: left
-            width: 60%
+            width: 64%
     &__icon
         &_minus
             width: 16px
@@ -31,3 +31,33 @@
         &_check
             width: 20px
             height: 15px
+
+@media (max-width: 1400px)
+    .table
+        &__cell
+            width: 65%
+
+@media (max-width: 991px)
+    .table
+        &__tTitle
+            font-size: 18px
+            line-height: 28px
+        &__cell
+            padding-bottom: 0px
+            padding-top: 0px
+            height: 64px
+            &_head
+                padding-bottom: 20px
+                padding-top: 0
+
+
+@media (max-width: 575px)
+    .table
+        &__icon
+            &_mobile
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+
+
+

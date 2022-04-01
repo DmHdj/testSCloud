@@ -1,5 +1,6 @@
+'use strict';
+
 window.addEventListener('DOMContentLoaded', () => { 
-    'use strict';
 
     // Получаем элементы
     const sliderContent = document.querySelectorAll('.slider__content'),

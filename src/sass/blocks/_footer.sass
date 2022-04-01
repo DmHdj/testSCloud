@@ -1,13 +1,15 @@
 .footer
-    margin-top: 164px
+    margin-top: 160px
     &__menuWrapper
         display: flex
         justify-content: space-between
     &__col
         max-width: 245px
+        &:last-child
+            margin-left: 60px
     &__nav
         height: calc( 190px - 25px - 20px )
-        margin-top: 25px
+        margin-top: 20px
     &__list
         padding: 0
         margin: 0
@@ -41,6 +43,7 @@
         width: 300px
         display: flex
         align-items: center
+        margin-left: 50px
         justify-content: space-between
     &__socialIcon
         &_insta
@@ -64,7 +67,135 @@
         justify-content: space-between
     &__appLink
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    
 
-    
+@media (max-width: 1400px)
+    .footer
+        margin-top: 132px
+        &__menuWrapper
+            padding-top: 70px
+            border-top: 1px solid #C0C0C0
+        &__nav
+            margin-top: 16px
+        &__contactsAndSocial
+            margin-top: 55px
+            justify-content: start
+        &__contactsWrapper
+            width: 375px
+        &__contactsWrapper
+            align-items: center
+        &__logo
+            width: 74px
+            height: 47px
+            margin-right: 21px
+        &__appLink
+            &_google
+                display: none
+        &__social
+            width: 264px
+            margin-right: 13px
+            margin-left: 22px
+        &__socialIcon
+            &_insta
+                width: 20px
+                height: 20px
+            &_fb
+                width: 11px
+                height: 20px
+            &_vk
+                width: 23px
+                height: 14px
+            &_youtube
+                width: 24px
+                height: 17px
+        &__apps
+            width: 148px
+        &__address
+            margin-top: 4px
+        &__apple
+            width: 145px
+
+@media (max-width: 991px)
+    .footer
+        margin-top: 60px
+        &__menuWrapper
+            padding-top: 55px
+            justify-content: start
+        &__nav
+            display: none
+        &__col
+            max-width: none
+            margin-right: 70px
+            &:last-child
+                margin-left: 0
+                margin-right: 0
+        &__contactsAndSocial
+            margin-top: 37px
+            flex-wrap: wrap
+        &__contactsWrapper
+            width: 100%
+            justify-content: space-between
+            align-items: start
+        &__contacts
+            text-align: right
+        &__social
+            width: 280px
+            align-self: center
+            margin-top: 25px
+            margin-left: 0
+            margin-right: 22px
+        &__apps
+            width: 158px
+            align-self: center
+            margin-top: 18px
+        &__apple
+            width: 158px
+        &__address
+            margin-top: 0
+
+@media (max-width: 767px)
+    .footer
+        &__col
+            margin-right: 30px
+
+@media (max-width: 575px)
+    .footer
+        margin-top: 40px
+        &__menuWrapper
+            flex-direction: column
+            align-items: center
+            padding-top: 35px
+        &__col
+            margin-right: 0px
+            margin-bottom: 10px
+        &__contactsAndSocial
+            flex-direction: column
+            margin-top: 15px
+        &__contactsWrapper
+            flex-direction: column
+            align-items: center
+        &__contacts
+            text-align: center
+            margin-top: 37px
+        &__address
+            margin-top: 8px
+            margin-right: 0px
+        &__number
+            font-size: 20px
+            line-height: 25px
+        &__social
+            width: 245px
+            margin-right: 0
+            margin-top: 35px
+        &__apps
+            align-self: center
+            justify-content: center
+            margin-top: 25px
+        &__apple
+            width: 130px
+
+        
+        
+
+
+
     

@@ -15,7 +15,7 @@
             width: 8px
             height: 11px
             top: 4px
-            left: 45%
+            left: 55%
             background: url('../icons/angle_brackets.svg') center top no-repeat
     &__other
         &::after
@@ -24,10 +24,12 @@
     &__promo
         margin-top: 31px
     &__footer
+        display: block
         font-size: 16px
         line-height: 16px
+        margin-top: 20px
         &::after
-            left: 110%
+            left: 9.5rem
             top: 4px
             transform: rotate(90deg)
     &_gray
@@ -35,5 +37,51 @@
         &:hover
             color: $main-text-color
             text-decoration: none
+        
+@media (max-width: 1400px)
+    .link
+        &_withBracket
+            &::after
+                left: 75%
+        &__promo
+            margin-top: 15px
+        &__other
+            &::after
+                left: 110%
+                top: 5px
+        &__footer
+            &::after
+                left: 9.5rem
+        &_hide
+            display: none
 
+@media (max-width: 1199px)
+    .link
+        &_block
+            display: block
+
+@media (max-width: 991px)
+    .link
+        &__form
+            font-size: 12px
+            line-height: 16px
+        &__promo
+            margin-top: 33px
+            &::after
+                left: 9.5rem
+                top: 4px
+        &__other
+            &::after
+                left: 5.5rem
+                top: 2px
+        &__footer
+            display: none
+        &__copyright
+            font-size: 12px
+            line-height: 16px
+
+@media (max-width: 575px)
+    .link
+        &_hideMobile
+            display: none
 
